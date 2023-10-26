@@ -1,0 +1,32 @@
+[
+  {
+    "No": "1",
+    "Program Studi": "Rekayasa Nanoteknologi",
+    "Jenjang": "S1",
+    "Akreditasi": "BA"
+  },
+  {
+    "No": "2",
+    "Program Studi": "Teknik Elektro",
+    "Jenjang": "S1",
+    "Akreditasi": "BA"
+  },
+  {
+    "No": "3",
+    "Program Studi": "Teknik Industri",
+    "Jenjang": "S1",
+    "Akreditasi": "BA"
+  },
+  {
+    "No": "4",
+    "Program Studi": "Teknik Robotika dan Kecerdasan Buatan",
+    "Jenjang": "S1",
+    "Akreditasi": "BA"
+  },
+  {
+    "No": "5",
+    "Program Studi": "Teknologi Sains Data",
+    "Jenjang": "S1",
+    "Akreditasi": "BA"
+  }
+]
