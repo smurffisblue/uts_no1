@@ -1,0 +1,95 @@
+/* Reset CSS */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Container */
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Background Halaman Utama */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: rgba(240, 240, 240, 0.5); 
+    background-image: url('background.jpg'); /* Ganti 'background.jpg' dengan nama file gambar Anda */
+    background-size: cover; /* Menyesuaikan gambar agar mengisi seluruh latar belakang */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar latar belakang */
+    background-attachment: fixed; /* Membuat gambar latar belakang tetap di tempat saat menggulir halaman */
+    background-color: #f0f0f0; /* Warna latar belakang cadangan jika gambar tidak tersedia atau tidak muat */
+}
+
+/* Heading Styles */
+h1 {
+    color: #102165;
+    font-size: 24px; /* Ubah ukuran font sesuai preferensi Anda */
+    font-weight: bold; /* Tambahkan ketebalan teks jika diinginkan */
+    text-transform: uppercase; /* Ubah teks menjadi huruf kapital jika diinginkan */
+    text-shadow: 2px 2px 4px rgba(85, 73, 193, 0.2); /* Tambahkan bayangan teks */
+    letter-spacing: 2px; /* Tambahkan jarak antar huruf jika diinginkan */
+}
+
+/* Input Styles */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px; /* Ubah ukuran font sesuai preferensi Anda */
+}
+
+/* Button Styles */
+button {
+    background-color: #7541d7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    font-size: 16px; /* Ubah ukuran font sesuai preferensi Anda */
+}
+
+button:hover {
+    background-color: #4e83bd;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    font-weight: bold; /* Tambahkan ketebalan teks saat dihover */
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    font-size: 14px; /* Ubah ukuran font sesuai preferensi Anda */
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Table Header Styles */
+th {
+    background-color: #5a0f4b;
+    color: #bfa5ca;
+    font-size: 16px; /* Ubah ukuran font sesuai preferensi Anda */
+    font-weight: bold; /* Tambahkan ketebalan teks jika diinginkan */
+}

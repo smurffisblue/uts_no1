@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convert Tabel HTML ke CSV</title>
+</head>
+<body>
+    <table id="myTable">
+        <tr>
+            <th>Nama</th>
+            <th>Usia</th>
+            <th>Alamat</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>30</td>
+            <td>New York</td>
+        </tr>
+        <tr>
+            <td>Jane Smith</td>
+            <td>25</td>
+            <td>Los Angeles</td>
+        </tr>
+    </table>
+   
+    <button onclick="exportToCSV('myTable', 'data.csv')">Convert ke CSV</button>
+
+
+    <script>
+        function exportToCSV(tableId, filename) {
+            const table = document.getElementById(tableId);
+            const rows = table.querySelectorAll('tr');
+            const csvData = [];
+
+
+            for (let i = 0; i < rows.length; i++) {
+                const cells = rows[i].querySelectorAll('th, td');
+                const rowData = [];
+                for (let j = 0; j < cells.length; j++) {
+                    rowData.push(cells[j].textContent);
+                }
+                csvData.push(rowData.join(','));
+            }
+
+
+            const csvContent = 'data:text/csv;charset=utf-8,' + csvData.join('\n');
+            const encodedUri = encodeURI(csvContent);
+            const link = document.createElement('a');
+            link.setAttribute('href', encodedUri);
+            link.setAttribute('download', filename);
+            document.body.appendChild(link);
+            link.click();
+        }
+    </script>
+</body>
+</html>
+
+

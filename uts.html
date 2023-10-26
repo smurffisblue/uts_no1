@@ -1,0 +1,25 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="uts.css">
+    <title>Data Fetcher</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Fetcher</h1>
+        <input type="text" id="urlInput" placeholder="Masukkan URL data">
+        <button id="fetchButton">Ambil Data</button>
+        <div id="resultTable"></div>
+    </div>
+    <div class="container">
+        <input value="Export as CSV 2" type="button" onclick="$('#example1').table2CSV({header:['Area Code','Cogs','DifferenceBetweenActualandTargetProfit', 'Date', 'Inventory Margin', 'Margin', 'Market_size', 'Market', 'Marketing', 'Product_line', 'Product_type', 'Product', 'Profit', 'Sales', 'State', 'Target_cogs', 'Target_margin', 'Target_profit', 'Target_sales', 'Total_expenses', 'Type']})">
+    </div>
+    <script src="uts_presentation.js"></script>
+    <script src="uts_business.js"></script>
+    <script src="uts_data.js"></script>
+    <script src="html2csv.js"></script>
+</body>
+</html>
